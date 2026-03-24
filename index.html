@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Nursing Agency | Your Career, Your Journey</title>
+    <meta name="description" content="Connect with premium short-term hospital positions. Travel Nursing Agency offers top pay, housing, and supportive healthcare careers.">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EmploymentAgency",
+      "name": "NurseSync Travel Nursing",
+      "url": "https://nursesync.com",
+      "logo": "https://nursesync.com/assets/images/logo.png",
+      "description": "Connecting nurses with premium hospital assignments.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Career Blvd",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-0199",
+        "contactType": "recruiters"
+      }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NurseSync</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home Layout 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home Layout 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Housing Assistance</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Compliance Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm fw-bold" aria-label="Toggle RTL">RTL</button>
+                        <button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-primary-custom">Nurse Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section section-padding bg-alt">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Your Nursing Career, <span class="text-primary">Redefined.</span></h1>
+                    <p class="lead mb-4">Join 10,000+ nurses traveling across the country with NurseSync. Premium pay, private housing, and 24/7 support.</p>
+                    <div class="d-flex gap-3">
+                        <a href="register.html" class="btn btn-primary-custom px-4 py-2">Apply Now</a>
+                        <a href="services.html" class="btn btn-outline-primary px-4 py-2">Our Benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Smiling Nurse" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section section-padding">
+        <div class="container text-center">
+            <h2 class="mb-5">Why Choose NurseSync?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="custom-card h-100">
+                        <i class="bi bi-cash-stack display-4 text-primary mb-3"></i>
+                        <h3>Highest Pay Rates</h3>
+                        <p>We negotiate top-tier crisis and standard rates directly with hospitals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card h-100">
+                        <i class="bi bi-house-heart display-4 text-primary mb-3"></i>
+                        <h3>Luxury Housing</h3>
+                        <p>Stay in fully furnished, safe, and modern apartments at no extra cost.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card h-100">
+                        <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                        <h3>Day 1 Insurance</h3>
+                        <p>Full health, dental, and vision coverage from the moment you start.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Snippet -->
+    <section class="about-snippet section-padding bg-alt">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h2 class="mb-4">Over 15 Years of <span class="text-primary">Medical Staffing Excellence</span></h2>
+                    <p>Established with a mission to empower healthcare professionals, NurseSync has grown into a leading travel nursing agency. We don't just find you a job; we build your career journey with personalized support and premium benefits.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> Dedicated 24/7 clinical support team</li>
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> Personalized career counseling and placement</li>
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> Expert relocation and housing assistance</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline-primary mt-3">Learn More About Us</a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop" alt="Clinical Team" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section section-padding text-center bg-primary-custom text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">10K+</h2>
+                    <p class="mb-0">Nurses Placed</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">450+</h2>
+                    <p class="mb-0">Hospitals Served</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">98%</h2>
+                    <p class="mb-0">Nurse Satisfaction</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">15+</h2>
+                    <p class="mb-0">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Voices from the <span class="text-primary">Field</span></h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="custom-card testimonial-card h-100">
+                        <p class="font-italic mb-4">"NurseSync made my first travel assignment so smooth. Everything from housing to my first paycheck was handled perfectly!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/sarah_jenkins.png" alt="Sarah Jenkins" class="rounded-circle me-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary);">
+                            <div>
+                                <h5 class="mb-0">Sarah Jenkins</h5>
+                                <small class="text-muted">ICU Nurse, 3 Assignments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card testimonial-card h-100">
+                        <p class="font-italic mb-4">"The 24/7 support is real. I had an issue at 3 AM and someone was there to help. I feel genuinely valued here."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/marcus_thorne.png" alt="Marcus Thorne" class="rounded-circle me-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary);">
+                            <div>
+                                <h5 class="mb-0">Marcus Thorne</h5>
+                                <small class="text-muted">ER Nurse, 5 Assignments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card testimonial-card h-100">
+                        <p class="font-italic mb-4">"Great pay rates but even better recruiters. My representative actually listens to what I want in an assignment."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/elena_rodriguez.png" alt="Elena Rodriguez" class="rounded-circle me-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary);">
+                            <div>
+                                <h5 class="mb-0">Elena Rodriguez</h5>
+                                <small class="text-muted">Med-Surg, 2 Assignments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Newsletter Snippet -->
+    <section class="blog-preview section-padding bg-alt">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="mb-0">Travel Nursing <span class="text-primary">Insights</span></h2>
+                <a href="blog.html" class="btn btn-primary-custom btn-sm">Read All Posts</a>
+            </div>
+            <div class="row g-4 text-start">
+                <div class="col-md-4">
+                    <div class="custom-card p-0 overflow-hidden h-100 shadow-sm border-0">
+                        <img src="assets/images/winter_travel.png" alt="Winter Travel for Nurses" class="img-fluid">
+                        <div class="p-4">
+                            <span class="badge bg-primary mb-2">Travel Tips</span>
+                            <h5>5 Cities for Winter Travel</h5>
+                            <p class="text-muted small">Stay warm and make premium rates in these top locations...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card p-0 overflow-hidden h-100 shadow-sm border-0">
+                        <img src="assets/images/finance_stipends.png" alt="Maximizing Tax-Free Stipends" class="img-fluid">
+                        <div class="p-4">
+                            <span class="badge bg-primary mb-2">Finance</span>
+                            <h5>Maximizing Tax-Free Stipends</h5>
+                            <p class="text-muted small">Learn how to make the most of your housing and travel allowances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card p-0 overflow-hidden h-100 shadow-sm border-0">
+                        <img src="assets/images/crna_pathway.png" alt="CRNA Career Pathways" class="img-fluid">
+                        <div class="p-4">
+                            <span class="badge bg-primary mb-2">Career</span>
+                            <h5>CRNA Career Pathways</h5>
+                            <p class="text-muted small">Discover how travel assignments can lead to specialized certifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta section-padding text-center">
+        <div class="container py-5 bg-primary-custom text-white rounded-5 shadow-lg">
+            <h2 class="display-5 fw-bold mb-4">Ready for Your Next Adventure?</h2>
+            <p class="lead mb-5 px-lg-5">Thousands of assignments are waiting for you across the country. Get started in minutes.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="register.html" class="btn btn-light-custom btn-lg px-5">Join Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Get Help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-4 text-white" href="index.html">
+                        <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                        <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+                    </a>
+                    <p class="text-muted">A supportive, professional site connecting nurses with short-term hospital positions, highlighting benefits and housing.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Nurse Portal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-white text-decoration-none">Register</a></li>
+                        <li class="mb-2"><a href="dashboard.html" class="text-white text-decoration-none">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted">Get the latest job alerts and travel tips.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" required>
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 NurseSync. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

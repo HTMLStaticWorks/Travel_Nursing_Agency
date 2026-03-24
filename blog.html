@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Insights Blog | NurseSync</title>
+    <meta name="description" content="Stay updated with the latest travel nursing tips, hospital trends, and nurse life stories on the NurseSync blog.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NurseSync</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home Layout 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home Layout 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Housing Assistance</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Compliance Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm fw-bold" aria-label="Toggle RTL">RTL</button>
+                        <button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-primary-custom">Nurse Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Existing) -->
+    <section class="section-padding position-relative text-white text-center overflow-hidden" style="background: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop') no-repeat center center / cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+        <div class="container position-relative z-1 py-5">
+            <h1 class="display-4 fw-bold text-white mb-3">NurseSync Blog</h1>
+            <p class="lead text-light col-lg-8 mx-auto">Insights, tips, and stories from the travel nursing frontline.</p>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="featured-post-section section-padding pb-0">
+        <div class="container">
+            <div class="custom-card featured-card p-0 overflow-hidden border-0 shadow-lg">
+                <div class="row g-0">
+                    <div class="col-lg-7">
+                        <img src="assets/images/future_nursing.png" alt="Future of Travel Nursing" class="img-fluid h-100 object-fit-cover">
+                    </div>
+                    <div class="col-lg-5 p-5 d-flex flex-column justify-content-center">
+                        <span class="badge bg-primary mb-3 align-self-start">Featured Story</span>
+                        <h2 class="display-6 fw-bold mb-3">The Future of Travel Nursing in 2027</h2>
+                        <p class="text-muted mb-4">From AI-driven matching to remote triage assignments, discover how the landscape is changing for the modern healthcare nomad.</p>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-person-circle fs-3 text-primary me-2"></i>
+                            <div>
+                                <h6 class="mb-0">By Dr. Sarah Chen</h6>
+                                <small class="text-muted">10 Min Read</small>
+                            </div>
+                        </div>
+                        <a href="blog-details.html" class="btn btn-primary-custom align-self-start">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Categories Bar -->
+    <section class="blog-filters section-padding">
+        <div class="container">
+            <div class="custom-card p-4 bg-alt border-0 shadow-sm">
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0" placeholder="Search articles...">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                            <button class="btn btn-sm btn-outline-primary active">All</button>
+                            <button class="btn btn-sm btn-outline-primary">Career Tips</button>
+                            <button class="btn btn-sm btn-outline-primary">Lifestyle</button>
+                            <button class="btn btn-sm btn-outline-primary">Finance</button>
+                            <button class="btn btn-sm btn-outline-primary">Health & Wellness</button>
+                            <button class="btn btn-sm btn-outline-primary">Tech</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100 overflow-hidden p-0">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=2070&auto=format&fit=crop" alt="Blog Post" class="img-fluid">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary">Career Tips</span>
+                                <small class="text-muted">October 24, 2026</small>
+                            </div>
+                            <h4>How to Land Your First Crisis Contract</h4>
+                            <p class="text-muted">Learn the secrets of standing out in high-demand hospital scenarios.</p>
+                            <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100 overflow-hidden p-0">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop" alt="Blog Post" class="img-fluid">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-secondary">Lifestyle</span>
+                                <small class="text-muted">October 20, 2026</small>
+                            </div>
+                            <h4>Packing Essentials for the Road</h4>
+                            <p class="text-muted">What to bring (and what to leave) for your next 13-week adventure.</p>
+                            <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100 overflow-hidden p-0">
+                        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?q=80&w=2071&auto=format&fit=crop" alt="Blog Post" class="img-fluid">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-accent text-white">Finance</span>
+                                <small class="text-muted">October 15, 2026</small>
+                            </div>
+                            <h4>Maximizing Tax-Free Stipends</h4>
+                            <p class="text-muted">Expert financial advice for travel nurses looking to grow their savings.</p>
+                            <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Blog Grid (Existing) ends here -->
+
+    <!-- Trending Posts -->
+    <section class="trending-posts section-padding bg-alt">
+        <div class="container">
+            <h3 class="mb-5"><i class="bi bi-graph-up-arrow text-primary me-2"></i> Trending This Week</h3>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h2 class="text-muted opacity-25 fw-bold mb-0">01</h2>
+                        <div>
+                            <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Top 10 Cities for Foodie Nurses</a></h6>
+                            <small class="text-muted">Lifestyle • 5 Min</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h2 class="text-muted opacity-25 fw-bold mb-0">02</h2>
+                        <div>
+                            <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Understanding Tax-Free Stipends</a></h6>
+                            <small class="text-muted">Finance • 12 Min</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h2 class="text-muted opacity-25 fw-bold mb-0">03</h2>
+                        <div>
+                            <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Burnout Prevention for Travelers</a></h6>
+                            <small class="text-muted">Health • 8 Min</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h2 class="text-muted opacity-25 fw-bold mb-0">04</h2>
+                        <div>
+                            <h6 class="mb-1"><a href="blog-details.html" class="text-decoration-none text-dark">Licensing Compact Guide</a></h6>
+                            <small class="text-muted">Career • 15 Min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-4 text-white" href="index.html">
+                        <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                        <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+                    </a>
+                    <p class="text-muted">A supportive, professional site connecting nurses with short-term hospital positions, highlighting benefits and housing.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Nurse Portal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-white text-decoration-none">Register</a></li>
+                        <li class="mb-2"><a href="dashboard.html" class="text-white text-decoration-none">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 NurseSync. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

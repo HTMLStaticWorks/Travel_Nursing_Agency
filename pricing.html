@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Pay Rates | NurseSync Pricing</title>
+    <meta name="description" content="Check our travel nursing pay packages, including crisis rates and standard stipends. We believe in total financial transparency.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NurseSync</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home Layout 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home Layout 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Housing Assistance</a></li>
+                                <li><a class="dropdown-item" href="service-details.html">Compliance Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm fw-bold" aria-label="Toggle RTL">RTL</button>
+                        <button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-primary-custom">Nurse Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding position-relative text-white text-center overflow-hidden" style="background: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop') no-repeat center center / cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+        <div class="container position-relative z-1 py-5">
+            <h1 class="display-4 fw-bold text-white mb-3">Pay Transparency</h1>
+            <p class="lead text-light col-lg-8 mx-auto">Know exactly what you earn before you sign. No hidden fees.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Tables -->
+    <section id="pricing-plans" class="section-padding">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100 p-5">
+                        <h4 class="fw-bold">Local Contract</h4>
+                        <p class="text-muted small">Stay close to home</p>
+                        <div class="display-5 fw-bold my-4 text-primary">$3,200<small class="fs-6 text-muted">/week</small></div>
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 50 Mile Radius</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Day/Night Shifts</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Full Insurance</li>
+                            <li class="mb-3 text-muted"><del><i class="bi bi-x text-muted me-2"></i> Housing Stipend</del></li>
+                        </ul>
+                        <a href="register.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Apply Locally</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100 p-5 border-primary shadow-lg position-relative" style="transform: scale(1.05); z-index: 10; border-width: 2px;">
+                        <span class="badge bg-primary position-absolute top-0 start-50 translate-middle px-4 py-2 rounded-pill">MOST IMPORTANT</span>
+                        <h4 class="fw-bold">Traveler Pro</h4>
+                        <p class="text-muted small">Max adventure & pay</p>
+                        <div class="display-5 fw-bold my-4 text-primary">$4,500<small class="fs-6 text-muted">/week</small></div>
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-3"><i class="bi bi-check2-all text-primary me-2"></i> Nationwide Placement</li>
+                            <li class="mb-3"><i class="bi bi-check2-all text-primary me-2"></i> Move-in Ready Housing</li>
+                            <li class="mb-3"><i class="bi bi-check2-all text-primary me-2"></i> Travel Reimbursement</li>
+                            <li class="mb-3"><i class="bi bi-check2-all text-primary me-2"></i> 401k Matching</li>
+                        </ul>
+                        <a href="register.html" class="btn btn-primary-custom w-100 py-3 rounded-pill shadow">Go Travel Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100 p-5">
+                        <h4 class="fw-bold">Crisis Response</h4>
+                        <p class="text-muted small">High-demand needs</p>
+                        <div class="display-5 fw-bold my-4 text-primary">$6,000+<small class="fs-6 text-muted">/week</small></div>
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-3"><i class="bi bi-lightning-charge-fill text-warning me-2"></i> Rapid Deployment</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Emergency Rates</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Premium Incidentals</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Unlimited OT</li>
+                        </ul>
+                        <a href="register.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Apply Crisis</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 text-center px-lg-5">
+                <p class="text-muted">*Pay rates vary by facility, specialty, and state. NurseSync guarantees a 15% increase over your previous agency's base rate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Included Benefits -->
+    <section class="benefits-grid section-padding bg-alt">
+        <div class="container">
+            <h2 class="text-center mb-5">Standard with <span class="text-primary">Every Contract</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center p-4">
+                        <i class="bi bi-piggy-bank display-5 text-primary mb-3"></i>
+                        <h5>Tax-Free Stipends</h5>
+                        <p class="text-muted small">Maximum allowable GSA rates for housing and meals.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4">
+                        <i class="bi bi-heart-pulse display-5 text-primary mb-3"></i>
+                        <h5>Day 1 Insurance</h5>
+                        <p class="text-muted small">Medical, dental, and vision coverage from your first shift.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4">
+                        <i class="bi bi-safe display-5 text-primary mb-3"></i>
+                        <h5>401k Matching</h5>
+                        <p class="text-muted small">We match up to 4% of your contributions immediately.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4">
+                        <i class="bi bi-mortarboard display-5 text-primary mb-3"></i>
+                        <h5>CEU Reimbursement</h5>
+                        <p class="text-muted small">Up to $500 per year for certifications and license renewals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">The NurseSync <span class="text-primary">Advantage</span></h2>
+            <div class="table-responsive custom-table-container shadow-lg rounded-4 overflow-hidden">
+                <table class="table table-hover mb-0 align-middle">
+                    <thead class="bg-primary-custom text-white">
+                        <tr>
+                            <th class="p-4 fs-5">Features</th>
+                            <th class="p-4 fs-5 text-center">NurseSync</th>
+                            <th class="p-4 fs-5 text-center text-white-50">Generic Agency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-4 fw-bold">Pay Transparency</td>
+                            <td class="p-4 text-center text-primary fs-4"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="p-4 text-center text-muted"><i class="bi bi-question-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 fw-bold">Daily Pay Option</td>
+                            <td class="p-4 text-center text-primary fs-4"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="p-4 text-center text-muted"><i class="bi bi-x-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 fw-bold">Dedicated Clinical Liaison</td>
+                            <td class="p-4 text-center text-primary fs-4"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="p-4 text-center text-muted"><i class="bi bi-dash-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 fw-bold">Full Housing Placement</td>
+                            <td class="p-4 text-center text-primary fs-4"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="p-4 text-center text-muted"><i class="bi bi-dash-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing FAQ -->
+    <section class="faq-section section-padding bg-alt">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing <span class="text-primary">FAQ</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush" id="pricingFaq">
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pf1">
+                                    How are my stipends calculated?
+                                </button>
+                            </h2>
+                            <div id="pf1" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-muted">Stipends are based on the GSA’s per diem rates for the specific location of your assignment. We always offer the maximum tax-free amount allowable by law.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pf2">
+                                    Do you offer referral bonuses?
+                                </button>
+                            </h2>
+                            <div id="pf2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-muted">Yes! We offer a $1,000 referral bonus for every nurse you refer who completes a 13-week assignment with us.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pf3">
+                                    Is overtime pay guaranteed?
+                                </button>
+                            </h2>
+                            <div id="pf3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-muted">Overtime is typically paid at 1.5x to 2x your base rate, depending on the state and facility contract.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-4 text-white" href="index.html">
+                        <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
+                        <span class="fw-bold">NURSE<span class="text-primary">SYNC</span></span>
+                    </a>
+                    <p class="text-muted">A supportive, professional site connecting nurses with short-term hospital positions, highlighting benefits and housing.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Nurse Portal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-white text-decoration-none">Register</a></li>
+                        <li class="mb-2"><a href="dashboard.html" class="text-white text-decoration-none">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 NurseSync. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
