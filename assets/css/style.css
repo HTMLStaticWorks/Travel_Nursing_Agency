@@ -4,7 +4,7 @@
 :root {
     /* Brand Colors */
     --primary: #004AAD;
-    --secondary: #5DE2E7;
+    --secondary: #0D6EFD;
     --accent: #FF914D;
     
     /* Light Mode Neutrals */
@@ -188,7 +188,7 @@
 }
 .footer .btn-primary-custom:hover {
     transform: scale(1.08);
-    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.5);
 }
 
 /* Contact Page Extras */
@@ -284,7 +284,7 @@ p {
     border: none;
 }
 .footer .btn-primary-custom:hover {
-    background-color: #4ed0d5;
+    background-color: #0B5ED7;
     color: #000000 !important;
 }
 
@@ -297,6 +297,65 @@ p {
 
 .bg-alt {
     background-color: var(--bg-alt);
+}
+
+/* Pricing-specific sections */
+.comparison-section {
+    background-color: var(--bg-alt);
+}
+
+.contact-section {
+    background-color: #050505;
+    color: #FFFFFF;
+}
+
+.contact-section .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="dark"] .comparison-section,
+[data-theme="dark"] .contact-section {
+    background-color: #010101;
+}
+
+@media (max-width: 575.98px) {
+    .custom-table-container.table-responsive {
+        border: none;
+    }
+    .custom-table-container table {
+        border: none;
+    }
+    .custom-table-container table thead {
+        display: none;
+    }
+    .custom-table-container table tbody,
+    .custom-table-container table tr {
+        display: block;
+        width: 100%;
+    }
+    .custom-table-container table tbody tr {
+        background: var(--card-bg);
+        border-radius: 16px;
+        box-shadow: var(--shadow-sm);
+        padding: var(--space-3);
+        margin-bottom: var(--space-3);
+    }
+    .custom-table-container table tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-2) 0;
+        border: none;
+        font-weight: 600;
+        border-bottom: 1px dashed var(--border-color);
+    }
+    .custom-table-container table tbody tr td:last-child {
+        border-bottom: none;
+    }
+    .custom-table-container table tbody tr td i {
+        font-size: 1.4rem;
+        margin-left: var(--space-2);
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -354,6 +413,16 @@ p {
     position: relative;
     overflow: hidden;
     height: 100%;
+}
+
+.pricing-highlight-card {
+    overflow: visible;
+}
+
+.pricing-highlight-card .badge {
+    top: -0.5rem;
+    transform: translate(-50%, 0);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* Glassmorphism for Dark Mode */
@@ -415,6 +484,10 @@ p {
     color: var(--text-secondary);
     font-size: 0.95rem;
     margin-bottom: 0;
+}
+
+.feature-card .card-image-wrapper {
+    margin-bottom: var(--space-4);
 }
 
 /* Hover Effects */
