@@ -21,22 +21,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .auth-container {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg-alt);
-            padding: var(--space-5) 0;
-        }
         .auth-card {
             max-width: 450px;
-            width: 100%;
-            padding: var(--space-5);
-        }
-        .auth-form .form-control,
-        .auth-form .btn {
-            width: 100%;
+            margin: 0 1rem;
         }
     </style>
 </head>
@@ -59,34 +46,32 @@
             <form class="needs-validation auth-form" novalidate action="dashboard.html">
                 <div class="mb-4">
                     <label class="form-label">Email Address</label>
-                    <input type="email" class="form-control" placeholder="nurse@example.com" required>
+                    <input type="email" class="form-control w-100" placeholder="nurse@example.com" required>
                 </div>
                 <div class="mb-4">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                    <input type="password" class="form-control w-100" placeholder="••••••••" required>
                 </div>
-                <div class="mb-3">
-                    <div class="form-check">
+                <div class="d-flex align-items-center justify-content-between gap-3 mb-4 flex-wrap">
+                    <div class="form-check mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="rememberMe">
                         <label class="form-check-label text-muted" for="rememberMe">
                             Remember Me
                         </label>
                     </div>
+                    <a href="#" class="small text-primary text-decoration-none ms-auto">Forgot Password?</a>
                 </div>
-                <div class="mb-4">
-                    <a href="#" class="small text-primary text-decoration-none">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn btn-primary-custom w-100 py-3 mb-2">Login Now</button>
+                <button type="submit" class="btn btn-primary-custom auth-action w-100 mb-2">Login Now</button>
                 <div class="d-flex align-items-center my-3">
                     <hr class="flex-grow-1 opacity-25">
                     <span class="mx-3 text-muted small">OR</span>
                     <hr class="flex-grow-1 opacity-25">
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-outline-secondary py-3 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
+                    <button type="button" class="btn btn-outline-secondary auth-action w-100 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
                         <i class="bi bi-google text-danger"></i> Continue with Google
                     </button>
-                    <button type="button" class="btn btn-dark py-3 text-white fw-bold d-flex align-items-center justify-content-center gap-2">
+                    <button type="button" class="btn btn-dark auth-action w-100 text-white fw-bold d-flex align-items-center justify-content-center gap-2">
                         <i class="bi bi-apple fs-4"></i> Continue with Apple
                     </button>
                 </div>

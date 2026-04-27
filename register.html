@@ -21,29 +21,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .auth-container {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg-alt);
-            padding: var(--space-5) 0;
-        }
         .auth-card {
             max-width: 650px;
-            width: 100%;
-            padding: var(--space-5);
-        }
-        .auth-form .form-control,
-        .auth-form .form-select,
-        .auth-form .btn {
-            width: 100%;
-        }
-        .auth-form .input-group .form-control {
-            width: 1%;
-        }
-        .auth-form .input-group .btn {
-            width: auto;
+            margin: 0 1rem;
         }
     </style>
 </head>
@@ -66,7 +46,7 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Jane Doe" required>
+                        <input type="text" class="form-control w-100" placeholder="Jane Doe" required>
                     </div>
                     <div class="col-12">
                         <label class="form-label">Nursing Specialty</label>
@@ -79,12 +59,12 @@
                     </div>
                     <div class="col-md-12">
                         <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" placeholder="nurse@example.com" required>
+                        <input type="email" class="form-control w-100" placeholder="nurse@example.com" required>
                     </div>
                     <div class="col-12">
                         <label class="form-label">Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" id="password" required>
+                            <input type="password" class="form-control w-100" id="password" required>
                             <button class="btn btn-outline-secondary" type="button" data-password-toggle="password" aria-label="Show password">
                                 <i class="bi bi-eye"></i>
                             </button>
@@ -93,7 +73,7 @@
                     <div class="col-12">
                         <label class="form-label">Confirm Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <input type="password" class="form-control w-100" id="confirmPassword" required>
                             <button class="btn btn-outline-secondary" type="button" data-password-toggle="confirmPassword" aria-label="Show confirm password">
                                 <i class="bi bi-eye"></i>
                             </button>
@@ -111,16 +91,16 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4">
-                        <button type="submit" class="btn btn-primary-custom w-100 py-3 mb-2">Create Profile</button>
+                        <button type="submit" class="btn btn-primary-custom auth-action w-100 mb-2">Create Profile</button>
                         <div class="d-flex align-items-center my-3">
                             <hr class="flex-grow-1 opacity-25">
                             <span class="mx-3 text-muted small">OR</span>
                             <hr class="flex-grow-1 opacity-25">
                         </div>
-                        <button type="button" class="btn btn-outline-secondary w-100 py-3 mb-3 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
+                        <button type="button" class="btn btn-outline-secondary auth-action w-100 mb-3 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
                             <i class="bi bi-google text-danger"></i> Continue with Google
                         </button>
-                        <button type="button" class="btn btn-outline-secondary w-100 py-3 mb-4 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
+                        <button type="button" class="btn btn-outline-secondary auth-action w-100 mb-4 text-dark fw-bold d-flex align-items-center justify-content-center gap-2">
                             <i class="bi bi-apple fs-4"></i> Continue with Apple
                         </button>
                         <div class="text-center text-muted">
