@@ -584,6 +584,14 @@ p {
     color: var(--text-primary);
 }
 
+.offcanvas .btn-primary-custom {
+    color: #FFFFFF !important;
+}
+
+.offcanvas .btn-primary-custom:hover {
+    color: #FFFFFF !important;
+}
+
 .offcanvas .nav-link:hover,
 .offcanvas .nav-link.active,
 .offcanvas .dropdown-item:hover,
