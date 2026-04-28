@@ -81,7 +81,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }, false);
     });
 
-    // 5. RTL Toggle (For Testing / Ready for RTL)
+    // 5. Password visibility toggle
+    document.querySelectorAll('.password-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-password-target');
+            const passwordInput = document.getElementById(targetId);
+            const icon = button.querySelector('i');
+
+            if (!passwordInput) return;
+
+            const isPassword = passwordInput.getAttribute('type') === 'password';
+            passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+            button.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+            button.setAttribute('aria-pressed', String(isPassword));
+
+            if (icon) {
+                icon.classList.toggle('bi-eye', !isPassword);
+                icon.classList.toggle('bi-eye-slash', isPassword);
+            }
+        });
+    });
+
+    // 6. RTL Toggle (For Testing / Ready for RTL)
     const rtlBtn = document.getElementById('rtl-toggle');
     const htmlTag = document.documentElement;
 
